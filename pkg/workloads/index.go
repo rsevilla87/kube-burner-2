@@ -50,7 +50,7 @@ func NewIndex(metricsEndpoint *string, ocpMetaAgent *ocpmetadata.Metadata) *cobr
 			uuid, _ = cmd.Flags().GetString("uuid")
 			clusterMetadata, err := ocpMetaAgent.GetClusterMetadata()
 			if err != nil {
-				log.Fatal("Error obtaining clusterMetadata: ", err.Error())
+				log.Fatal("Error obtaining clusterMetadsssata: ", err.Error())
 			}
 			esServer, _ := cmd.Flags().GetString("es-server")
 			esIndex, _ := cmd.Flags().GetString("es-index")
